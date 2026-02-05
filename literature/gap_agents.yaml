@@ -1,0 +1,9 @@
+agents:
+  - name: gap_from_assumptions
+    focus: implicit_assumptions_in_existing_methods
+
+  - name: gap_from_methodological_weakness
+    focus: known_limitations_and_edge_cases
+
+  - name: gap_from_reproducibility_bias
+    focus: data_bias_and_replication_constraints
