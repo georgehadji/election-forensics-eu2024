@@ -1,0 +1,11 @@
+template_fields:
+  - gap_id
+  - assumption_challenged
+  - existing_method_limit
+  - failure_mode
+  - proposed_extension
+  - empirical_test
+  - falsification_condition
+  - baseline_checks
+  - expected_reviewer_objection
+  - mitigation_strategy
