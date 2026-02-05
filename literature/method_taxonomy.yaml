@@ -32,3 +32,13 @@ composite_indices:
   description: Combined multi-signal forensic indicators
   examples:
     - anomaly score aggregation
+
+taxonomy_amendment_rule:
+  description: Conditions under which new method categories may be added
+  allowed_if:
+    - method_not_reducible_to_existing_categories
+    - documented_in_multiple_independent_sources
+  process:
+    - proposal_logged
+    - justification_required
+    - inclusion_or_exclusion_decision_recorded
