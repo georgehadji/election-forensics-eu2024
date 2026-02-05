@@ -3,6 +3,15 @@
   authors: null
   year: null
   venue: null
+
+  publication_type: null      # journal | conference | working_paper | report
+  peer_reviewed: null         # true | false | unknown
+  data_availability: null     # public | restricted | none
+
   method_category: null
   data_type: null
+
+  inclusion_decision: null    # included | excluded
+  exclusion_reason: null      # required if excluded
+
   notes: null
