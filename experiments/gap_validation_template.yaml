@@ -30,8 +30,12 @@ numerical_stability_check:
 experimental_design:
   required_data: []
   procedure: null
+  adversarial_test:
+    description: null
+    maximizes_false_negative_risk: true
   feasibility: null
   estimated_cost: null
+
 
 falsification_criteria:
   conditions: []
