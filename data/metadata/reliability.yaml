@@ -1,0 +1,23 @@
+official_results:
+  reliability: high
+  notes: Administrative data
+
+exit_polls:
+  reliability: variable
+  notes: Methodology-dependent
+
+pre_election_polls:
+  reliability: variable
+  notes: Time and sampling bias
+
+postal_vote:
+  reliability: administrative
+  notes: Distinct voting mechanism
+
+external_vote:
+  reliability: administrative
+  notes: Distinct electorate
+
+eu_comparative:
+  reliability: medium
+  notes: Normalized indicators only

@@ -1,0 +1,12 @@
+party_mapping:
+  description: Party name harmonization across elections
+  rules:
+    - splits_and_merges_documented
+    - no retrospective reclassification
+
+geographic_mapping:
+  description: Geographic unit alignment
+  rules:
+    - polling_station_preferred
+    - region_if_missing
+    - national_only_if_required

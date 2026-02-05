@@ -1,0 +1,32 @@
+official_results:
+  description: Official election results
+  years:
+    - 2024
+    - previous_eu_elections
+    - previous_national_elections
+  granularity:
+    - polling_station
+    - region
+    - national
+  source: TBD
+
+exit_polls:
+  description: Exit poll results
+  availability: conditional
+  source: TBD
+
+pre_election_polls:
+  description: Pre-election surveys
+  source: TBD
+
+postal_vote:
+  description: Postal vote (internal)
+  source: TBD
+
+external_vote:
+  description: Vote from abroad
+  source: TBD
+
+eu_comparative:
+  description: Selected EU countries (institutionally comparable)
+  source: TBD
