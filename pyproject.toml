@@ -26,8 +26,13 @@ dev = [
   "coverage>=7.3"
 ]
 
+[tool.setuptools]
+package-dir = {"" = "."}
+
 [tool.setuptools.packages.find]
 where = ["."]
+include = ["election_forensics*"]
+
 
 [tool.setuptools.package-data]
 election_forensics = ["py.typed"]
