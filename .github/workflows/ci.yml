@@ -31,6 +31,8 @@ jobs:
           python pipelines/run_experiments.py
           python pipelines/build_figures.py
           python pipelines/ingest_literature.py
+          python pipelines/harvest_literature.py
+
 
 
       - name: Run tests
