@@ -25,3 +25,11 @@ human_override:
   requires:
     - written justification
     - explicit acknowledgement of rule violation
+
+baseline_survival_rule:
+  description: Conditions under which a gap is considered to survive baseline comparison
+  required:
+    - no_systematic_reduction_in_explanatory_power
+    - no_equivalent_performance_from_existing_methods
+  failure_if:
+    - gap_disappears_under_historical_or_cross_country_baselines
