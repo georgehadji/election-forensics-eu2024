@@ -1,4 +1,4 @@
-name: Research CI
+name: CI
 
 on:
   push:
@@ -7,39 +7,26 @@ on:
     branches: [ "main" ]
 
 jobs:
-  run-pipeline:
+  tests:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
-      - name: Install minimal dependencies
+      - name: Install package (editable)
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
-
-      - name: Run pipeline skeletons
-        run: |
-          python pipelines/ingest.py
-          python pipelines/preprocess.py
-          python pipelines/run_experiments.py
-          python pipelines/build_figures.py
-          python pipelines/ingest_literature.py
-          python pipelines/harvest_literature.py
-          python pipelines/generate_gaps.py
-          python pipelines/derive_gap_math.py
-          python pipelines/evaluate_experiments.py
-
-
-
-
+          pip install -e .[dev]
 
       - name: Run tests
         run: |
-          pytest
+          pytest --cov=election_forensics.metrics --cov-fail-under=100
