@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pytest
+          pip install pytest numpy pandas
 
       - name: Run tests
         run: pytest
