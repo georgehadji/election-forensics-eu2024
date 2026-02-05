@@ -1,0 +1,9 @@
+excluded_if:
+  - purely_opinion_or_commentary
+  - no methodological content
+  - unverifiable claims without data or formal model
+  - duplicate of another entry without substantive extension
+
+notes:
+  - exclusion must be documented per entry
+  - exclusion does not imply methodological invalidity
