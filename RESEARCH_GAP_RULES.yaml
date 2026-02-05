@@ -1,0 +1,27 @@
+gap_acceptance_criteria:
+  required:
+    - methodological_basis
+    - empirical_testability
+    - falsifiability
+    - baseline_resilience
+    - non_political_framing
+
+gap_rejection_triggers:
+  - anomaly_only_without_method_extension
+  - rebranding_existing_methods
+  - poll_result_disagreement_only
+  - intent_or_fraud_implication
+  - country_specific_without_generalization
+
+evaluation_requirements:
+  must_include:
+    - explicit assumption being challenged
+    - description of failure mode
+    - proposed test or experiment
+    - expected counterfactual outcome
+
+human_override:
+  allowed: true
+  requires:
+    - written justification
+    - explicit acknowledgement of rule violation
