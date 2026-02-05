@@ -33,6 +33,9 @@ jobs:
           python pipelines/ingest_literature.py
           python pipelines/harvest_literature.py
           python pipelines/generate_gaps.py
+          python pipelines/derive_gap_math.py
+          python pipelines/evaluate_experiments.py
+
 
 
 
