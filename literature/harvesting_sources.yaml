@@ -1,0 +1,25 @@
+academic_apis:
+  - name: crossref
+    type: metadata
+    coverage: journals_and_conferences
+  - name: openalex
+    type: metadata
+    coverage: multidisciplinary
+  - name: arxiv
+    type: preprints
+    coverage: quantitative_methods
+
+grey_literature:
+  - name: OSCE_ODIHR
+    type: election_observation_reports
+  - name: Venice_Commission
+    type: legal_and_procedural_reports
+  - name: national_election_authorities
+    type: administrative_reports
+  - name: working_papers
+    type: institutional_repositories
+
+constraints:
+  - english_language_only
+  - publication_year_ge_2000
+  - relevance_to_election_analysis
