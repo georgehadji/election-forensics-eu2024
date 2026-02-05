@@ -7,3 +7,6 @@ agents:
 
   - name: gap_from_reproducibility_bias
     focus: data_bias_and_replication_constraints
+
+  - name: gap_refutation_agent
+    focus: demonstrate_non_gap_via_existing_methods_or_results
