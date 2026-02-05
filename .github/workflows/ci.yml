@@ -30,6 +30,8 @@ jobs:
           python pipelines/preprocess.py
           python pipelines/run_experiments.py
           python pipelines/build_figures.py
+          python pipelines/ingest_literature.py
+
 
       - name: Run tests
         run: |
