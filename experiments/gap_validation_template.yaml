@@ -40,6 +40,8 @@ experimental_design:
 falsification_criteria:
   conditions: []
   expected_negative_outcome: null
+  precedence_rule: falsification_overrides_positive_results
+
 
 validation_outcome:
   status: pending   # pass | fail | revise
@@ -50,3 +52,7 @@ identifiability_check:
   rationale: null
   identifiable_parameters: []
   non_identifiable_symmetries: []
+
+cost_consideration:
+  affects_epistemic_status: false
+  notes: "Cost influences scheduling only, not validity."
