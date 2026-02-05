@@ -1,0 +1,36 @@
+name: Research CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install minimal dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Run pipeline skeletons
+        run: |
+          python pipelines/ingest.py
+          python pipelines/preprocess.py
+          python pipelines/run_experiments.py
+          python pipelines/build_figures.py
+
+      - name: Run tests
+        run: |
+          pytest
