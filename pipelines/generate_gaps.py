@@ -15,8 +15,11 @@ def main():
     gaps = []
 
     # Skeleton example (no real generation yet)
+    # NOTE:
+    # No seeded example gaps are included in production runs.
+    # Gaps must be generated dynamically by agents.
+
     gaps.append({
-        "gap_id": "GAP_001",
         "assumption_challenged": "Implicit station-level independence",
         "existing_method_limit": "Aggregation hides spatial coupling",
         "failure_mode": "False negatives in anomaly detection",
