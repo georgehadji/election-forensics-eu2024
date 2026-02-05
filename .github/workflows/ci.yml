@@ -32,6 +32,8 @@ jobs:
           python pipelines/build_figures.py
           python pipelines/ingest_literature.py
           python pipelines/harvest_literature.py
+          python pipelines/generate_gaps.py
+
 
 
 
