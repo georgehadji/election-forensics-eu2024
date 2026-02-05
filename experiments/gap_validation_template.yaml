@@ -6,8 +6,16 @@ mathematical_formulation:
   derived_properties: []
 
 logical_consistency_check:
-  status: unchecked
+  fatal_errors:
+    - internal_contradiction
+    - circular_definition
+    - unfalsifiable_claim
+  non_fatal_issues:
+    - approximation_assumption
+    - boundary_condition_dependency
+  status: unchecked     # pass | fail
   notes: null
+
 
 numerical_stability_check:
   status: unchecked
