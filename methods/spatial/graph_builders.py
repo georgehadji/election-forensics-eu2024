@@ -8,9 +8,10 @@ def normalize_rows(W: np.ndarray) -> np.ndarray:
     Rows with zero sum remain zero.
     """
     row_sums = W.sum(axis=1, keepdims=True)
-    with np.errstate(divide="ignore", invalid="ignore"):
-        Wn = np.divide(W, row_sums, where=row_sums != 0)
+    Wn = np.zeros_like(W, dtype=float)
+    np.divide(W, row_sums, out=Wn, where=row_sums != 0)
     return Wn
+
 
 
 def knn_graph(coords: np.ndarray, k: int) -> np.ndarray:
