@@ -26,3 +26,9 @@ falsification_criteria:
 validation_outcome:
   status: pending   # pass | fail | revise
   justification: null
+
+identifiability_check:
+  status: unchecked     # pass | fail
+  rationale: null
+  identifiable_parameters: []
+  non_identifiable_symmetries: []
