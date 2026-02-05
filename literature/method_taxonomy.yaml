@@ -1,0 +1,34 @@
+distributional_tests:
+  description: Digit and distribution-based forensic tests
+  examples:
+    - Benford-type laws
+    - last-digit tests
+
+turnout_vote_coupling:
+  description: Relationship between turnout and vote shares
+  examples:
+    - turnout elasticity
+    - abnormal correlation patterns
+
+spatial_analysis:
+  description: Spatial clustering and autocorrelation
+  examples:
+    - Moran I
+    - LISA
+
+temporal_consistency:
+  description: Time-based consistency checks
+  examples:
+    - reporting order effects
+    - late-count shifts
+
+comparative_baselines:
+  description: Cross-election and cross-country comparisons
+  examples:
+    - EU vs national elections
+    - historical baselines
+
+composite_indices:
+  description: Combined multi-signal forensic indicators
+  examples:
+    - anomaly score aggregation
