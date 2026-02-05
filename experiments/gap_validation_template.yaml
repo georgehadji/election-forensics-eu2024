@@ -1,0 +1,28 @@
+gap_id: null
+
+mathematical_formulation:
+  assumptions: []
+  formal_definition: null
+  derived_properties: []
+
+logical_consistency_check:
+  status: unchecked
+  notes: null
+
+numerical_stability_check:
+  status: unchecked
+  notes: null
+
+experimental_design:
+  required_data: []
+  procedure: null
+  feasibility: null
+  estimated_cost: null
+
+falsification_criteria:
+  conditions: []
+  expected_negative_outcome: null
+
+validation_outcome:
+  status: pending   # pass | fail | revise
+  justification: null
