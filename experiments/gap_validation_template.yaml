@@ -18,8 +18,14 @@ logical_consistency_check:
 
 
 numerical_stability_check:
-  status: unchecked
+  perturbation_classes:
+    - sampling_noise
+    - turnout_scaling
+    - geographic_reaggregation
+    - missing_data_imputation
+  status: unchecked     # pass | fail
   notes: null
+
 
 experimental_design:
   required_data: []
