@@ -1,0 +1,10 @@
+deduplication_rules:
+  - journal_version_preferred_over_working_paper
+  - latest_revision_preferred
+  - conference_and_journal_versions_linked_not_duplicated
+
+canonicalization:
+  identifier_priority:
+    - DOI
+    - arXiv_id
+    - institutional_report_id
